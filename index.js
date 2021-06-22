@@ -7,16 +7,6 @@ let popImage = document.createElement("img");
 let yayImage = document.createElement("img")
 yayImage.setAttribute('src', `./images/yay.png`)
 let i = 0
-function removeImage(image) {
-  image.remove();
-}
-
-function appendImage(image) {
- 
-  popImage.setAttribute("src", `./images/pop-${image.getAttribute("id")}.png`);
-  image.parentNode.appendChild(popImage);
- 
-}
 
 images.forEach((image) => {
   
